@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.forbtn{
+    margin-top: 12px;
+}
+
+
+.mybtns{
+    margin-left: 18px;
+    color: #ff9505;
+    background-color: white;
+    border: none;
+    padding: 3px;
+    min-width: 90px;
+    min-height: 40px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding-top: 8px;
+    font-weight: 700;
+}
+
+
+.mybtns::after{
+    content: "" ;
+    display: flex;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ff9505;
+    margin-top: 0.5rem;
+    width: 0;
+    transition: width 0.4s ease-out;
+}
+
+
+.mybtns:hover::after{
+    width: 100%;
+}
+
+.mybtns:hover{
+    opacity: 0.8;
+}
+
+#content{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.menues{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.food{
+    width: 50%;
+    display: flex;
+    padding: 10px;
+}
+
+.food img{
+    width: 200px;
+    height: 140px;
+    border-radius: 5px;
+    border: 1px solid orange;
+}
+
+.side{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+
+.side div{
+    border-bottom: 1px solid orange;
+    padding-bottom: 7px;
+}
+
+.side p{
+    margin-top: 5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+:root{
+    --inter: 'inter', sans-serif;
+    --Kaushan: 'Kaushan Script', cursive;
+    --Mont: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.5;
+    background-color: #44355b;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+img{
+    width: 40%;
+    display: block;
+}
+
+.main-title{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.para{
+    font-family: var(--Kausan);
+    font-size: 1rem;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    margin-top: 10px;
+    color: #ff9505;
+}
+
+.para2{
+    font-family: var(--Kausan);
+    font-size: 1rem;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #ff9505;
+}
+
+.filter-btn{
+    padding: 0.6rem 0;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-family: var(--inter);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    color: #ff9505;
+    display: inline-block;
+    margin: 0.5rem;
+    cursor: pointer;
+    outline: 0;
+    transition: opacity 0.4s ease-out;
+    font-family: 'Kaushan Script', cursive;
+    margin-left: 30px;
+}
+
+.filter-btn::after{
+    content: "" ;
+    display: block;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ff9505;
+    margin-top: 0.5rem;
+    width: 0;
+    transition: width 0.4s ease-out;
+}
+
+
+.filter-btn:hover::after{
+    width: 100%;
+}
+
+.filter-btn:hover{
+    opacity: 0.8;
+}
+
+.underline{
+    width: 100%;
+    height: 3px;
+    margin-top: 15px;
+    background-color: #ff9505;
+    
+}
+
+.Photo{
+    border-radius: 4px;
+    width: 160px;
+    height: 150px;
+    margin-left: 15px;
+    border-radius: 20px;
+    display: flex;
+    margin-top: 10px;
+}
+
+/* .item-info{
+    padding: 0.4rem 0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    opacity: 0.8;
+    padding-left: 190px;
+    display: flex;
+    margin-top: -50px;
+} */
+.item-text{
+    font-size: 12px;
+    padding-right: 12px;
+    margin-left: 200px;
+    
+    display: flex;
+}
+
+.price{
+    padding: 0.4rem 0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    opacity: 0.8;
+    margin-left: 200px;
+    margin-top: -10px;
+    display: flex;
+}
+
+.cardItem{
+    padding: 0.4rem 0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    opacity: 0.8;
+    margin-left: 200px;
+    margin-top: -150px;
+    display: flex;
+}
+.filter-btn{
+    padding-top: 0.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--inter);
+    font-family: 'Kaushan Script', cursive;
+}
+
+.menu-item{
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    color: #000;
+    margin: 0.6rem 0;
+    box-shadow: 0 0 16px -4x rgba(0, 0, 0, 0.75);
+    display: inline-block;
+    animation: fadeIn 2s;
+    min-height: 220px;
+    padding-top: 10px;
+    max-width: 45%;
+    margin-left: 45px;
+
+    
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.menu-item{
+    font-size: var(--inter);
+    color: #ff9505;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family: 'Kaushan Script', cursive;
+}
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+    .menu-head p{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+    
+@media screen and (min-width: 600px){
+    .food-item{
+        display: grid;
+        grid-template-columns: 25% auto;
+        align-items: center;
+        padding: 1rem;
+        column-gap:1rem;
+    }
+    .Food-Content{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .menu-head p{
+        width: 50%;
+    }
+    .food-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+
+/* .btn{
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--cir-black);
+    padding: 0.175rem 0.75 rem;
+    display: inline-block;
+    transition: var(--transition);
+    font-size: 0.875rem;
+    border: 2px solid var(--cir-black);
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.section{
+    padding: 5rem 0;
+}
+
+main{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+} */
+
+
+
+
+
+/* .main-title h2{
+    font-family: var(--Kausan);
+    font-size: 2.6rem;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.main-title p{
+    font-weight: 300;
+    padding: 1.8rem 0;
+    font-family: 'Kaushan Script', cursive;
+} */
+
+
+
+/* .active-btn{
+    color: white;
+} */
+
+
+/* .menu{
+    margin: 2rem 0;
+    
+} */
+
+
